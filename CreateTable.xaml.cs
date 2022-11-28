@@ -39,6 +39,11 @@ namespace WaiterApp
         {                                                            // przeslane dane przydadza sie w pozniejszym sprincie do tworzenia zamowienia, a narazie niech beda jako stale globalne
             // NAzwa_okna_Szymona skrót = new NAzwa_okna_Szymona(tb_nr_stolika.Text/*int*/, tb_ilosc_gosci.Text /*int*/, priorytet/* bool type */);
             // sprót.Show()
+
+            Dania daniaOkno = new Dania(1, 3, false);
+            daniaOkno.Show();
+
+
             this.Close();
         }
 
