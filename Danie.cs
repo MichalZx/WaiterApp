@@ -7,9 +7,9 @@ namespace WaiterApp
     internal class Danie
     {
         string danie, kategoria;
-        int cena;
+        double cena;
 
-        public Danie(string danie, string kategoria, int cena)
+        public Danie(string danie, string kategoria, double cena)
         {
             this.danie = danie;
             this.kategoria = kategoria;

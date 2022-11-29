@@ -33,6 +33,21 @@ namespace WaiterApp
             InitializeComponent();
         }
 
+        private void danie1_Click(object sender, RoutedEventArgs e)
+        {
+            Danie dn = new Danie("Rosół", "Zupy", 21);
+        }
+
+        private void danie2_Click(object sender, RoutedEventArgs e)
+        {
+            //W każdym przycisku ma być inne danie które zrobi obiekt jak wyżej
+        }
+
+        private void danie3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Priorytet_Initialized(object sender, EventArgs e)
         {
             if (prio == true)
