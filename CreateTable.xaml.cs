@@ -40,10 +40,16 @@ namespace WaiterApp
             // NAzwa_okna_Szymona skrót = new NAzwa_okna_Szymona(tb_nr_stolika.Text/*int*/, tb_ilosc_gosci.Text /*int*/, priorytet/* bool type */);
             // sprót.Show()
 
-            Dania daniaOkno = new Dania(1, 3, false);
-            daniaOkno.Show();
-
-
+            if(priorytet.IsChecked ?? true)
+            {
+                Dania daniaOkno = new Dania(1, 3, true);
+                daniaOkno.Show();
+            }
+            else
+            {
+                Dania daniaOkno = new Dania(1, 3, false);
+                daniaOkno.Show();
+            }
             this.Close();
         }
 

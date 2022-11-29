@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="Dania" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="Priorytet" TextWrapping="Wrap" Margin="715,10,10,406" RenderTransformOrigin="0.349,0.286" Initialized="Priorytet_Initialized" TextAlignment="Center"/>
         <Button x:Name="danie1" Content="Danie 1" HorizontalAlignment="Left" Margin="150,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie1_Click"/>
         <Button x:Name="danie2" Content="Danie 2" HorizontalAlignment="Left" Margin="220,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie2_Click"/>
         <Button x:Name="danie3" Content="Danie 3" HorizontalAlignment="Left" Margin="290,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie3_Click"/>
+        <Label x:Name="priorytet" Content="" HorizontalAlignment="Left" Margin="668,10,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765"/>
+        
 
     </Grid>
 </Window>

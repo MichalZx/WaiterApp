@@ -23,15 +23,16 @@ namespace WaiterApp
         bool prio;
         public Dania(int numerStolika, int iloscGosci, bool prio)
         {
+            InitializeComponent();
+            priorytet.Content = (prio == true) ? "Priorytetowe!" : "Normalne";
             this.numerStolika=numerStolika;
             this.iloscGosci=iloscGosci;
             this.prio=prio;
-            InitializeComponent();
         }
-        public Dania()
-        {
-            InitializeComponent();
-        }
+        //public Dania()
+        //{
+        //    InitializeComponent();
+        //}
 
         private void danie1_Click(object sender, RoutedEventArgs e)
         {
@@ -45,17 +46,9 @@ namespace WaiterApp
 
         private void danie3_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
-        private void Priorytet_Initialized(object sender, EventArgs e)
-        {
-            if (prio == true)
-                Priorytet.Text = "Priorytetowe!";
-            else
-                Priorytet.Text = "Normalne";
-
-        }
 
         //Koncept jest taki, żeby zrobić button dla każdego dania, który będzie inicjował klasę Danie.cs (nazwa do zmiany) w której są
         //zawarte informajce o daniu.
