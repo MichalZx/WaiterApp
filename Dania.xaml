@@ -5,13 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaiterApp"
         mc:Ignorable="d"
-        Title="Dania" Height="450" Width="800">
+        Title="Dania" Height="450" Width="800"
+        WindowStartupLocation="Manual"
+        Left="0" Top="0">
     <Grid>
-        <Button x:Name="danie1" Content="Danie 1" HorizontalAlignment="Left" Margin="150,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie1_Click"/>
-        <Button x:Name="danie2" Content="Danie 2" HorizontalAlignment="Left" Margin="220,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie2_Click"/>
-        <Button x:Name="danie3" Content="Danie 3" HorizontalAlignment="Left" Margin="290,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="danie3_Click"/>
-        <Label x:Name="priorytet" Content="" HorizontalAlignment="Left" Margin="668,10,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765"/>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="770*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="classicBurger" HorizontalAlignment="Left" Margin="150,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="classicBurger_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Classic Burger" FontSize="9"/>
+        </Button>
+
+        <Button x:Name="texasBurger" HorizontalAlignment="Left" Margin="220,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="texasBurger_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Texas Burger" FontSize="9"/>
+        </Button>
+        <Button x:Name="cheeseburger" HorizontalAlignment="Left" Margin="290,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="cheeseburger_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Cheese Burger" FontSize="9"/>
+        </Button>
+        <Label x:Name="priorytet" HorizontalAlignment="Left" Margin="668,10,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="4"/>
+
+        <Button x:Name="zupaCzosnkowa" HorizontalAlignment="Left" Margin="356,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="zupaCzosnkowa_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Zupa Czosnkowa" FontSize="9"/>
+        </Button>
+        <Button x:Name="kremKukurydza" HorizontalAlignment="Left" Margin="426,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="kremKukurydza_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Zupa Krem z Kukurydzy" FontSize="9"/>
+        </Button>
+        <Button x:Name="salatkaKurczak" HorizontalAlignment="Left" Margin="496,105,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="salatkaKurczak_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Sałatka z Kurczaka" FontSize="9"/>
+        </Button>
+        <Button x:Name="classicSteak" HorizontalAlignment="Left" Margin="150,167,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="classicSteak_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Classic Steak" FontSize="9"/>
+        </Button>
+        <Button x:Name="porkRibs" HorizontalAlignment="Left" Margin="220,167,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="porkRibs_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Pork Ribs" FontSize="9"/>
+        </Button>
+        <Button x:Name="tomahawk" HorizontalAlignment="Left" Margin="290,167,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="tomahawk_Click" FontSize="9">
+            <TextBlock TextWrapping="Wrap" Text="Tomahawk Steak" FontSize="9"/>
+        </Button>
+        <Label x:Name="numer_stolika" HorizontalAlignment="Left" Margin="668,48,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="4"/>
+        <Label x:Name="ilosc_gosci" HorizontalAlignment="Left" Margin="670,86,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="4"/>
+
 
     </Grid>
 </Window>

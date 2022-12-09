@@ -42,12 +42,12 @@ namespace WaiterApp
 
             if(priorytet.IsChecked ?? true)
             {
-                Dania daniaOkno = new Dania(1, 3, true);
+                Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), true);
                 daniaOkno.Show();
             }
             else
             {
-                Dania daniaOkno = new Dania(1, 3, false);
+                Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), false);
                 daniaOkno.Show();
             }
             this.Close();

@@ -41,6 +41,7 @@ namespace WaiterApp
         public MainWindow()
         {
             InitializeComponent();
+            przycisk.Opacity = 1;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -58,8 +59,7 @@ namespace WaiterApp
             {
                 MessageBox.Show("Kelner poza bazą danych", "UWAGA");
             }
-
-
+            przycisk.Opacity = 0;
         }
     }
 }
