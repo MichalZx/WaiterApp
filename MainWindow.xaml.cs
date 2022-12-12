@@ -26,7 +26,7 @@ namespace WaiterApp
         {
             List<string> kelnerzyID = new List<string>()
             {
-                "kel01", "kelner01", "kelner", "KELNER", ""
+                "kel01", "kelner01", "kelner", "KELNER", "", "login kelnera" //usprawnienie że nie trzeba podawać loginu, tylko domyslna wartość odpala
             };
             foreach (string s in kelnerzyID)
             {
@@ -42,6 +42,19 @@ namespace WaiterApp
         {
             InitializeComponent();
             przycisk.Opacity = 1;
+        }
+        public MainWindow(int numerStolika, int iloscGosci, bool prio, List<Danie> zamowienie)
+        {
+            //na razie tylko 1 zamowienie w mainie, docelowo więcej
+            InitializeComponent();
+            tbZamowienie1.Text = $"Nr stolika: {numerStolika,-4} Ilość gości: {iloscGosci,-4} {prio,-20}+\n\n";
+            foreach (Danie item in zamowienie)
+            {
+                tbZamowienie1.Text += item.ToString()+"\n";
+                tbZamowienie1.Height += 30;
+            }
+            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -60,6 +73,11 @@ namespace WaiterApp
                 MessageBox.Show("Kelner poza bazą danych", "UWAGA");
             }
             przycisk.Opacity = 0;
+        }
+
+        private void tbNazwaKelnera_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

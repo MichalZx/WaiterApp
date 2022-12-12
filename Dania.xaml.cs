@@ -22,65 +22,76 @@ namespace WaiterApp
         int numerStolika, iloscGosci;
         bool prio;
         string path;
+        float kwota_zamowienia=0;
+        public List<Danie> zamowienie = new List<Danie>();
 
         private void classicBurger_Click(object sender, RoutedEventArgs e)
         {
             Danie classicBurger = new Danie("Classic", "Burgery", 31.50);
             classicBurger.Dodaj_do_rachunku(path);
+            zamowienie.Add(classicBurger);
         }
 
         private void texasBurger_Click(object sender, RoutedEventArgs e)
         {
             Danie texasBurger = new Danie("Texas", "Burgery", 37.00);
             texasBurger.Dodaj_do_rachunku(path);
+            zamowienie.Add(texasBurger);
         }
 
         private void cheeseburger_Click(object sender, RoutedEventArgs e)
         {
             Danie cheeseBurger = new Danie("CheeseBurger", "Burgery", 35.00);
             cheeseBurger.Dodaj_do_rachunku(path);
+            zamowienie.Add(cheeseBurger);
         }
 
         private void zupaCzosnkowa_Click(object sender, RoutedEventArgs e)
         {
             Danie zupaCzosnek = new Danie("Zupa Czosnkowa", "Zupy", 17.00);
             zupaCzosnek.Dodaj_do_rachunku(path);
+            zamowienie.Add(zupaCzosnek);
         }
 
         private void kremKukurydza_Click(object sender, RoutedEventArgs e)
         {
             Danie kremKuk = new Danie("Zupa Krem z Kukurydzy", "Zupy", 16.00);
             kremKuk.Dodaj_do_rachunku(path);
+            zamowienie.Add(kremKuk);
         }
 
         private void salatkaKurczak_Click(object sender, RoutedEventArgs e)
         {
             Danie salatkaKura = new Danie("Sałatka z Kurczakiem", "Dodatki", 34.00);
             salatkaKura.Dodaj_do_rachunku(path);
+            zamowienie.Add(salatkaKura);
         }
 
         private void classicSteak_Click(object sender, RoutedEventArgs e)
         {
             Danie stekKlasyczny = new Danie("Classic Steak", "Steki", 65.00);
             stekKlasyczny.Dodaj_do_rachunku(path);
+            zamowienie.Add(stekKlasyczny);
         }
 
         private void porkRibs_Click(object sender, RoutedEventArgs e)
         {
             Danie zeberkaWieprzowe = new Danie("Pork Ribs", "Steki", 55.00);
             zeberkaWieprzowe.Dodaj_do_rachunku(path);
+            zamowienie.Add(zeberkaWieprzowe);
         }
 
         private void tomahawk_Click(object sender, RoutedEventArgs e)
         {
             Danie stekToma = new Danie("Tomahawk Steak", "Steki", 84.00);
             stekToma.Dodaj_do_rachunku(path);
+            zamowienie.Add(stekToma);
         }
 
         private void powrot_do_menu_gl_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            //main.Show();                                                  //do Jarka jakbyś chciał przeciążyc to tu masz wywołanie
+            MainWindow main = new MainWindow(numerStolika, iloscGosci, prio, zamowienie);
+            main.Show();                                                  //do Jarka jakbyś chciał przeciążyc to tu masz wywołanie
             this.Close();
         }
 

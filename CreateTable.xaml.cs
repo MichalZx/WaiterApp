@@ -52,7 +52,7 @@ namespace WaiterApp
                 
                 if (priorytet.IsChecked ?? true)    //priorytetowe
                 {
-                    string path = @"..\..\..\Rachunki\!_" + czas_pliku + "bill.txt";
+                    string path = @"C:\Users\Dell\Downloads\" + czas_pliku + "bill.txt";
                     try
                     {
                         if (File.Exists(path)) File.Delete(path);

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WaiterApp
 {
-    internal class Danie
+    public class Danie
     {
         string danie, kategoria;
         double cena;
@@ -15,6 +15,11 @@ namespace WaiterApp
             this.danie = danie;
             this.kategoria = kategoria;
             this.cena = cena;
+        }
+        public override string ToString()
+        {
+        //należy ustawić tak aby wyświetlało równo
+            return $"{kategoria, -15} {danie,-20} {cena, -10}";
         }
         public void Dodaj_do_rachunku(string plik)
         {

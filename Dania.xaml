@@ -48,6 +48,7 @@
         <Label x:Name="numer_stolika" HorizontalAlignment="Left" Margin="668,48,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="4"/>
         <Label x:Name="ilosc_gosci" HorizontalAlignment="Left" Margin="670,86,0,0" VerticalAlignment="Top" Height="38" Width="122" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="4"/>
         <Button Name="powrot_do_menu_gl" Content="Zatwierdź rachunek" HorizontalAlignment="Left" Margin="298,335,0,0" VerticalAlignment="Top" Height="40" Width="166" Click="powrot_do_menu_gl_Click"/>
+        <Label x:Name="lbCenaCalosci" Content="Label" HorizontalAlignment="Left" Margin="629,105,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
 
 
     </Grid>
