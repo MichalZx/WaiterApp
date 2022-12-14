@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaiterApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="Manual"
+        Left="400" Top="0">
     <Grid>
+        <Button x:Name="przycisk" Content="Utwórz rachunek" HorizontalAlignment="Left" Margin="550,350,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="20"/>
+        <TextBox x:Name="tbNazwaKelnera" HorizontalAlignment="Left" Margin="550,300,0,0" TextWrapping="Wrap" Text="login kelnera" VerticalAlignment="Top" Width="120" FontSize="18" TextChanged="tbNazwaKelnera_TextChanged"/>
+        <TextBlock x:Name="tbZamowienie1" HorizontalAlignment="Left" Margin="20,20,0,0" TextWrapping="Wrap" Text="Tu wyświetli się zawartość zamówienia" VerticalAlignment="Top" Height="29" Width="400" Background="#FFFDF7F7"/>
 
     </Grid>
 </Window>
