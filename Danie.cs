@@ -9,7 +9,6 @@ namespace WaiterApp
     {
         string danie, kategoria;
         double cena;
-
         public Danie(string danie, string kategoria, double cena)
         {
             this.danie = danie;
@@ -19,7 +18,11 @@ namespace WaiterApp
         public override string ToString()
         {
         //należy ustawić tak aby wyświetlało równo
-            return $"{kategoria, -15} {danie,-20} {cena, -10}";
+            return $"{kategoria}\t{danie}\t{cena, -30}";
+        }
+        public double ZwrotCeny()
+        {
+            return cena;
         }
         public void Dodaj_do_rachunku(string plik)
         {
