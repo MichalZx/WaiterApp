@@ -4,7 +4,10 @@ using System.Text;
 
 namespace WaiterApp
 {
-    internal class test
+    class Rachunek
     {
+
+
+
     }
 }
