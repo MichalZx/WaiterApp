@@ -5,16 +5,24 @@ using System.Text;
 
 namespace WaiterApp
 {
-    internal class Danie
+    public class Danie
     {
         string danie, kategoria;
         double cena;
-
         public Danie(string danie, string kategoria, double cena)
         {
             this.danie = danie;
             this.kategoria = kategoria;
             this.cena = cena;
+        }
+        public override string ToString()
+        {
+        //należy ustawić tak aby wyświetlało równo
+            return $"{kategoria}\t{danie}\t{cena, -30}";
+        }
+        public double ZwrotCeny()
+        {
+            return cena;
         }
         public void Dodaj_do_rachunku(string plik)
         {

@@ -21,6 +21,8 @@ namespace WaiterApp
     public partial class CreateTable : Window
     {
         private string czas_otwarcia_rachunku;
+        private string kelner;
+        private DateTime czasotwarcia;
         public CreateTable()
         {
             InitializeComponent();
@@ -31,6 +33,8 @@ namespace WaiterApp
             czas_otwarcia_rachunku = czasotwarcia.ToString();
             lb_czas_otwarcia.Content = czasotwarcia.ToString("HH:mm:ss");
             lb_id_kelnera.Content = kelner;
+            this.kelner = kelner;
+            this.czasotwarcia = czasotwarcia;
         }
 
         private void Click_anuluj(object sender, RoutedEventArgs e)
@@ -45,6 +49,7 @@ namespace WaiterApp
             if (tb_ilosc_gosci.Text == "" | tb_nr_stolika.Text == "") MessageBox.Show("Wprowadź prawidłoą wartość następujących pól: \n- nrumer stolika \n- ilość gości", "Wykryto błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
             else
             {
+                if (!Directory.Exists(@"..\..\..\Rachunki")) { Directory.CreateDirectory(@"..\..\..\Rachunki"); }
                 string czas_pliku = czas_otwarcia_rachunku.Replace(".", "");
                 czas_pliku = czas_pliku.Replace(":", "");
                 czas_pliku = czas_pliku.Replace(" ", "_");
@@ -62,7 +67,7 @@ namespace WaiterApp
                     }
                     catch (Exception error) { Console.WriteLine(error); }
                     finally { if (sw != null) sw.Close(); }
-                    Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), true,path);
+                    Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), true,path, kelner, czasotwarcia);
                     daniaOkno.Show();
                 }   
                 else                                // NOwrmalne
@@ -77,7 +82,7 @@ namespace WaiterApp
                     }
                     catch (Exception error) { Console.WriteLine(error); }
                     finally { if (sw != null) sw.Close(); }
-                    Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), false,path);
+                    Dania daniaOkno = new Dania(Convert.ToInt32(tb_nr_stolika.Text), Convert.ToInt32(tb_ilosc_gosci.Text), false,path, kelner, czasotwarcia);
                     daniaOkno.Show();
                 }
                 this.Close();
