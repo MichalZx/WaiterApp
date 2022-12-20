@@ -13,10 +13,10 @@
         <TextBox x:Name="tbNazwaKelnera" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="login kelnera" VerticalAlignment="Top" Width="120" FontSize="18"/>
         <Button x:Name="btZamknijZamowienie1" Content="Zamknij zamówienie" HorizontalAlignment="Right" Margin="0,0,672,10" VerticalAlignment="Bottom" Width="118" Height="20" Click="btZamknijZamowienie_Click"/>
         <!-- powyższy button wsadzić do grida wyżej tak aby był na dole siatki trzymającej nasze zamówienie-->
-        <TextBlock x:Name="tbZamowienie2" HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" Width="153" Background="red"/>
-        <TextBlock x:Name="tbZamowienie3" HorizontalAlignment="Left" Margin="5,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" Width="158" Background="red"/>
-        <TextBlock x:Name="tbZamowienie4" HorizontalAlignment="Left" Margin="10,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" Width="153" Background="red"/>
-        <TextBlock x:Name="tbZamowienie1" HorizontalAlignment="Left" Margin="10,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" Width="153" Background="red"/>
+        <TextBlock x:Name="tbZamowienie2" HorizontalAlignment="Left" Margin="10,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="100" Width="344" Background="red"/>
+        <TextBlock x:Name="tbZamowienie3" HorizontalAlignment="Left" Margin="382,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="100" Width="395" Background="red"/>
+        <TextBlock x:Name="tbZamowienie4" HorizontalAlignment="Left" Margin="382,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="100" Width="395" Background="red"/>
+        <TextBlock x:Name="tbZamowienie1" HorizontalAlignment="Left" Margin="10,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="100" Width="344" Background="red"/>
 
         <Frame Name="rachunkiInfo" Content="" Margin="400,0,0,0" NavigationUIVisibility="Hidden"/>
         <Button Name="tempPOkaRachunek" Content="Button" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" Height="34" Width="160" Click="tempPOkaRachunek_Click"/>

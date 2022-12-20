@@ -1,0 +1,5 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 23	Ilość gości: 3	Priorytet: Wysoki
+Danie	Steki	Pork Ribs	55	|
+Danie	Steki	Classic Steak	65	|
+Danie	Burgery	Classic	31,5	|
+Danie	Burgery	Texas	37	|

@@ -25,6 +25,8 @@ namespace WaiterApp
         public List<Danie> zamowienie = new List<Danie>();
         string kelnerID;
         DateTime czasotwarcia;
+
+
         public void naleznosc(Danie potrawa)
         {
             double naleznosc = potrawa.ZwrotCeny() + double.Parse((string)lbCenaCalosci.Content);
@@ -106,9 +108,16 @@ namespace WaiterApp
 
         private void powrot_do_menu_gl_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(numerStolika, iloscGosci, prio, zamowienie, kelnerID, czasotwarcia);
+            // MainWindow main = new MainWindow(numerStolika, iloscGosci, prio, zamowienie, kelnerID, czasotwarcia);
+            MainWindow main = new MainWindow();
+            main.Show();
+            //Rachunki.dodaj(path);
+            //Rachunki.wywolajMain();
+            
+
+
             //MainWindow main2 = new MainWindow(path); //eksperymentalna ścieżka main na podstawie ścieżki do pliku .txt
-            main.Show();                                                  //do Jarka jakbyś chciał przeciążyc to tu masz wywołanie
+            //main.Show();                                                  //do Jarka jakbyś chciał przeciążyc to tu masz wywołanie
             //main2.Show();                                                  //do Jarka jakbyś chciał przeciążyc to tu masz wywołanie
             this.Close();
         }

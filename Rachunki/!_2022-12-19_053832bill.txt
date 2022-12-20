@@ -1,0 +1,5 @@
+Dane o rachunku	Kelner: kel01	Stolik: 6	Ilość gości: 4	Priorytet: Wysoki
+Danie	Steki	Tomahawk Steak	84	|
+Danie	Steki	Pork Ribs	55	|
+Danie	Steki	Classic Steak	65	|
+Danie	Zupy	Zupa Krem z Kukurydzy	16	|

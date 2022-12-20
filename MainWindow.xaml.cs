@@ -19,6 +19,9 @@ namespace WaiterApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    
+
     public class KelnerzyDane
     {
         public KelnerzyDane() { }
@@ -34,31 +37,57 @@ namespace WaiterApp
                 if (s.Equals(sprawdzany)) { return true; }
             }
             return false;
+
         }
 
     }
     public partial class MainWindow : Window
     {
         public int iloscrachunkow = 0;
+
+        #region Main działający i zawsze wywoływany, tylko upiększyć graficznie
         public MainWindow()
         {
             InitializeComponent();
             tbZamowienie1.Visibility = Visibility.Hidden;
             tbZamowienie2.Visibility = Visibility.Hidden;
             tbZamowienie3.Visibility = Visibility.Hidden;
-            tbZamowienie4.Visibility = Visibility.Hidden; //text boxy z rachunkami nie będą widoczne dla klienta
-            btZamknijZamowienie1.Visibility = Visibility.Hidden;
-        }
-        public MainWindow(string path)
-        {
-            InitializeComponent();
-            tbZamowienie1.Visibility = Visibility.Visible;
-            tbZamowienie1.Height = 100;
-            //string text =File.ReadAllText(path);
-            //StreamReader sr = new StreamReader(path);
-            tbZamowienie1.Text = File.ReadAllText(path);
+            tbZamowienie4.Visibility = Visibility.Hidden;
+
+            string folderPath = @"..\..\..\Rachunki\";
+            List<string> aktualneRachunki=new List<string>() ;
+            foreach (string file in Directory.EnumerateFiles(folderPath, "*.txt"))
+            {
+                aktualneRachunki.Add(File.ReadAllText(file));
+            }
+
+
+            if (aktualneRachunki.Count>=1)
+            {
+                tbZamowienie1.Visibility = Visibility.Visible;
+                tbZamowienie1.Text = aktualneRachunki[0];
+            }
+            if(aktualneRachunki.Count>=2)
+            {
+                tbZamowienie2.Visibility = Visibility.Visible;
+                tbZamowienie2.Text = aktualneRachunki[1];
+            }
+            if(aktualneRachunki.Count>=3)
+            {
+                tbZamowienie3.Visibility = Visibility.Visible;
+                tbZamowienie3.Text = aktualneRachunki[2];
+            }
+            if(aktualneRachunki.Count>=4)
+            {
+                tbZamowienie4.Visibility = Visibility.Visible;
+                tbZamowienie4.Text = aktualneRachunki[3];
+            }
 
         }
+        #endregion
+
+        #region bezsensowny Main z użytecznymi metodami
+        //Cały ten przeciążony main jest 
         public MainWindow(int numerStolika, int iloscGosci, bool prio, List<Danie> zamowienie, string kelnerID, DateTime czasotwarcia)
         {
             InitializeComponent();
@@ -126,6 +155,7 @@ namespace WaiterApp
             }
 
         }
+        #endregion
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -156,5 +186,6 @@ namespace WaiterApp
             info.WyswietlSzczegolyRachunku();
             rachunkiInfo.Content = info.lb_info.Content;
         }
+
     }
 }

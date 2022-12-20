@@ -1,0 +1,5 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 4	Ilość gości: 5	Priorytet: Normalny
+Danie	Steki	Pork Ribs	55	|
+Danie	Steki	Tomahawk Steak	84	|
+Danie	Burgery	CheeseBurger	35	|
+Danie	Zupy	Zupa Czosnkowa	17	|

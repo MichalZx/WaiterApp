@@ -1,0 +1,5 @@
+Dane o rachunku	Kelner: kel01	Stolik: 3	Ilość gości: 4	Priorytet: Normalny
+Danie	Burgery	CheeseBurger	35	|
+Danie	Burgery	Texas	37	|
+Danie	Burgery	Classic	31,5	|
+Danie	Steki	Classic Steak	65	|
