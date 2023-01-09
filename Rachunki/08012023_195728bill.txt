@@ -1,0 +1,7 @@
+Dane o rachunku	Kelner: 	Stolik: 12	Ilość gości: 12	Priorytet: Normalny
+Danie	Burgery	Classic	31,5	|
+Danie	Burgery	Texas	37	|
+Danie	Burgery	CheeseBurger	35	|
+Danie	Steki	Tomahawk Steak	84	|
+Danie	Steki	Pork Ribs	55	|
+Danie	Zupy	Zupa Krem z Kukurydzy	16	|

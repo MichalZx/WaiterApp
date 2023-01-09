@@ -1,0 +1,8 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 1	Ilość gości: 1	Priorytet: Normalny
+Danie	Burgery	CheeseBurger	35	|
+Danie	Burgery	Texas	37	|
+Danie	Burgery	Classic	31,5	|
+Danie	Burgery	CheeseBurger	35	|
+Danie	Burgery	Texas	37	|
+Danie	Burgery	CheeseBurger	35	|
+Danie	Burgery	Texas	37	|

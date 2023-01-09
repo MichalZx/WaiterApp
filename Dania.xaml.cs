@@ -76,7 +76,7 @@ namespace WaiterApp
 
         private void salatkaKurczak_Click(object sender, RoutedEventArgs e)
         {
-            Danie salatkaKura = new Danie("Sałatka z Kurczakiem", "Dodatki", 34.00);
+            Danie salatkaKura = new Danie("Sałatka z Kurczakiem", "Przekąski", 34.00);
             salatkaKura.Dodaj_do_rachunku(path);
             zamowienie.Add(salatkaKura);
             naleznosc(salatkaKura);
@@ -106,6 +106,198 @@ namespace WaiterApp
             naleznosc(stekToma);
         }
 
+        private void porkRibSandwich_Click(object sender, RoutedEventArgs e)
+        {
+            Danie cheeseBurger = new Danie("Porkrib Sandwich", "Burgery", 29.00);
+            cheeseBurger.Dodaj_do_rachunku(path);
+            zamowienie.Add(cheeseBurger);
+            naleznosc(cheeseBurger);
+        }
+
+        private void pulledPorkSandwich_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Pulled Pork Sandwich", "Burgery", 29.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void alCaponeBurger_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Al Capone Burger", "Burgery", 38.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void peperonata_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Peperonata", "Zupy", 17.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void rosol_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Rosół", "Zupy", 12.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void pomidorowa_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Pomidorowa", "Zupy", 14.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void barszcz_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Barszcz", "Zupy", 10.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void partyNachos_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Party Nachos", "Przekąski", 20.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void beefTartare_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Beef Tartare", "Przekąski", 30.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void bigComboPlate_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Big Combo Plate", "Przekąski", 50.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void louisianaWings_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Louisiana Bufallo Wings", "Przekąski", 29.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void ribeye_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Ribeye Steak", "Mięsa", 89.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void newyork_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("New York Steak", "Mięsa", 65.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void porkNeck_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("New York Steak", "Mięsa", 35.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void chickenBreasts_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Chicken Breast", "Mięsa", 28.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void pepsi_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Pepsi", "Napoje", 7.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void mirinda_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Mirinda", "Napoje", 8.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void shweppes_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Shweppes", "Napoje", 8.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void lipton_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Lipton", "Napoje", 5.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void woda_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Woda", "Napoje", 3.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void sok_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Sok", "Napoje", 16.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void redBull_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Red Bull", "Napoje", 14.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void wino_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Wino", "Napoje", 12.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
+        private void prosecco_Click(object sender, RoutedEventArgs e)
+        {
+            Danie d = new Danie("Prosecco", "Napoje", 11.00);
+            d.Dodaj_do_rachunku(path);
+            zamowienie.Add(d);
+            naleznosc(d);
+        }
+
         private void powrot_do_menu_gl_Click(object sender, RoutedEventArgs e)
         {
             // MainWindow main = new MainWindow(numerStolika, iloscGosci, prio, zamowienie, kelnerID, czasotwarcia);
@@ -122,6 +314,58 @@ namespace WaiterApp
             this.Close();
         }
 
+        private void kategorie_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var comboBoxItem = kategorie.Items[kategorie.SelectedIndex] as ComboBoxItem;
+            if (comboBoxItem != null)
+            {
+                string selectedcmb = comboBoxItem.Content.ToString();
+                if (selectedcmb == "Burgery")
+                {
+                    zupy.Visibility = Visibility.Collapsed;
+                    napoje.Visibility = Visibility.Collapsed;
+                    miesa.Visibility = Visibility.Collapsed;
+                    przekaski.Visibility = Visibility.Collapsed;
+                    burgery.Visibility = Visibility.Visible;
+                }
+                else if (selectedcmb == "Zupy")
+                {
+                    burgery.Visibility = Visibility.Collapsed;
+                    napoje.Visibility = Visibility.Collapsed;
+                    miesa.Visibility = Visibility.Collapsed;
+                    przekaski.Visibility = Visibility.Collapsed;
+                    zupy.Visibility = Visibility.Visible;
+                }
+                else if (selectedcmb == "Przekąski")
+                {
+                    burgery.Visibility = Visibility.Collapsed;
+                    zupy.Visibility = Visibility.Collapsed;
+                    napoje.Visibility = Visibility.Collapsed;
+                    miesa.Visibility = Visibility.Collapsed;
+                    przekaski.Visibility = Visibility.Visible;
+                }
+                else if (selectedcmb == "Mięsa")
+                {
+                    burgery.Visibility = Visibility.Collapsed;
+                    zupy.Visibility = Visibility.Collapsed;
+                    napoje.Visibility = Visibility.Collapsed;
+                    przekaski.Visibility = Visibility.Collapsed;
+                    miesa.Visibility = Visibility.Visible;
+                }
+                else if (selectedcmb == "Napoje")
+                {
+                    burgery.Visibility = Visibility.Collapsed;
+                    zupy.Visibility = Visibility.Collapsed;
+                    miesa.Visibility = Visibility.Collapsed;
+                    przekaski.Visibility = Visibility.Collapsed;
+                    napoje.Visibility = Visibility.Visible;
+                }
+            }
+
+        }
+
+        
+
         public Dania(int numerStolika, int iloscGosci, bool prio, string path, string kelnerID, DateTime czasotwarcia)
         {
             InitializeComponent();
@@ -134,7 +378,11 @@ namespace WaiterApp
             this.path = path;
             this.czasotwarcia = czasotwarcia;
             this.kelnerID = kelnerID;
-            
+            burgery.Visibility = Visibility.Collapsed;
+            przekaski.Visibility = Visibility.Collapsed;
+            zupy.Visibility= Visibility.Collapsed;
+            miesa.Visibility = Visibility.Collapsed;
+            napoje.Visibility = Visibility.Collapsed;
         }
         //public Dania()
         //{

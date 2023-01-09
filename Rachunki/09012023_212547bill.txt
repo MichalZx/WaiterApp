@@ -1,0 +1,34 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 1	Ilość gości: 1	Priorytet: Normalny
+Danie	Burgery	Porkrib Sandwich	29	|
+Danie	Burgery	Pulled Pork Sandwich	29	|
+Danie	Burgery	Al Capone Burger	38	|
+Danie	Burgery	CheeseBurger	35	|
+Danie	Burgery	Texas	37	|
+Danie	Burgery	Classic	31,5	|
+Danie	Zupy	Zupa Czosnkowa	17	|
+Danie	Zupy	Rosół	12	|
+Danie	Zupy	Pomidorowa	14	|
+Danie	Zupy	Barszcz	10	|
+Danie	Zupy	Peperonata	17	|
+Danie	Zupy	Zupa Krem z Kukurydzy	16	|
+Danie	Przekąski	Sałatka z Kurczakiem	34	|
+Danie	Przekąski	Big Combo Plate	50	|
+Danie	Przekąski	Louisiana Bufallo Wings	29	|
+Danie	Przekąski	Party Nachos	20	|
+Danie	Przekąski	Beef Tartare	30	|
+Danie	Steki	Classic Steak	65	|
+Danie	Mięsa	Ribeye Steak	89	|
+Danie	Mięsa	Chicken Breast	28	|
+Danie	Mięsa	New York Steak	65	|
+Danie	Steki	Pork Ribs	55	|
+Danie	Steki	Tomahawk Steak	84	|
+Danie	Mięsa	New York Steak	35	|
+Danie	Napoje	Lipton	5	|
+Danie	Napoje	Pepsi	7	|
+Danie	Napoje	Mirinda	8	|
+Danie	Napoje	Woda	3	|
+Danie	Napoje	Sok	16	|
+Danie	Napoje	Shweppes	8	|
+Danie	Napoje	Prosecco	11	|
+Danie	Napoje	Wino	12	|
+Danie	Napoje	Red Bull	14	|
