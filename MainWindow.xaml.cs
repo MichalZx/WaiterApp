@@ -83,8 +83,10 @@ namespace WaiterApp
             FileItem selectedItem = (FileItem)cbFiles.SelectedItem;
             if (selectedItem != null)
             {
-                string content = File.ReadAllText(selectedItem.FullPath);
-                tbContent.Text = content;
+                string path = selectedItem.FullPath;
+                SzczegolyRachunku info = new SzczegolyRachunku(path); 
+                info.WyswietlSzczegolyRachunku();
+                rachunkiInfo.Content = info.lb_info.Content;
             }
         }
 
@@ -117,7 +119,7 @@ namespace WaiterApp
             {
                 MessageBox.Show("Kelner poza bazą danych", "UWAGA");
             }
-            przycisk.Opacity = 0;
+            //przycisk.Opacity = 0;
         }
 
 

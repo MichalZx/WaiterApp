@@ -68,7 +68,7 @@ namespace WaiterApp
 
         private void kremKukurydza_Click(object sender, RoutedEventArgs e)
         {
-            Danie kremKuk = new Danie("Zupa Krem z Kukurydzy", "Zupy", 16.00);
+            Danie kremKuk = new Danie("Zupa Krem Kukurydza", "Zupy", 16.00);
             kremKuk.Dodaj_do_rachunku(path);
             zamowienie.Add(kremKuk);
             naleznosc(kremKuk);

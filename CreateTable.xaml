@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaiterApp"
         mc:Ignorable="d"
-        Title="Szczegóły stolika" Height="450" Width="500">
-    <Grid>
-        <Label Content="Czas otwarcia rachunku:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Name="lb_czas_otwarcia" Content="" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="137"/>
-        <Label Content="ID kelnera:" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top"/>
-        <Label Name="lb_id_kelnera" Content="" HorizontalAlignment="Right" Margin="0,41,10,0" VerticalAlignment="Top" Width="66" HorizontalContentAlignment="Right" />
-        <Label Content="Numer stolika:" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top"/>
-        <Label Content="Ilość gości:" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.95,0.337"/>
-        <Label Content="Priorytet" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb_nr_stolika" HorizontalAlignment="Left" Margin="102,113,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Tb_check_input" />
-        <TextBox x:Name="tb_ilosc_gosci" HorizontalAlignment="Left" Margin="102,144,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Tb_check_input" />
-        <CheckBox x:Name="priorytet" Content="Wysoki" HorizontalAlignment="Left" Margin="102,177,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="anuluj" Content="Anuluj i wyjdź" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Height="32" Width="87" Click="Click_anuluj"/>
-        <Button Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="32" Width="71" Click="Click_zatwierdz"/>
+        Title="Szczegóły stolika" Height="540" Width="600">
+
+
+    <Grid Background="DarkGray">
+        <Label Content="Czas otwarcia rachunku:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Name="lb_czas_otwarcia" Content="" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="137" FontSize="18"/>
+        <Label Content="ID kelnera:" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Name="lb_id_kelnera" Content="" HorizontalAlignment="Right" Margin="0,49,10,0" VerticalAlignment="Top" Width="66" HorizontalContentAlignment="Right"  FontSize="18"/>
+        <Label Content="Numer stolika:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Ilość gości:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.95,0.337" FontSize="18"/>
+        <Label Content="Priorytet" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="tb_nr_stolika" HorizontalAlignment="Left" Margin="138,114,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Tb_check_input"  FontSize="18"/>
+        <TextBox x:Name="tb_ilosc_gosci" HorizontalAlignment="Left" Margin="138,153,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="Tb_check_input"  FontSize="18"/>
+        <CheckBox x:Name="priorytet" Content="Wysoki" HorizontalAlignment="Left" Margin="138,194,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="anuluj" Content="Anuluj i wyjdź" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="227" Height="52" Click="Click_anuluj" Background="Black" Foreground="White" FontSize="18"/>
+        <Button Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="227" Height="52" Click="Click_zatwierdz" Background="Black" Foreground="White" FontSize="18"/>
 
     </Grid>
 </Window>

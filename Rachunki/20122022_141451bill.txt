@@ -1,0 +1,1 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 6	Ilość gości: 7	Priorytet: Normalny

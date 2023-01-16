@@ -5,136 +5,133 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaiterApp"
         mc:Ignorable="d"
-        Title="Dania" Height="450" Width="800"
+        Title="Dania" Width="1280" Height="720"
         WindowStartupLocation="Manual"
         Left="0" Top="0">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="770*"/>
-            <ColumnDefinition Width="8*"/>
-            <ColumnDefinition Width="7*"/>
-            <ColumnDefinition Width="15*"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="priorytet" HorizontalAlignment="Left" Margin="668,10,0,0" VerticalAlignment="Top" Height="38" Width="117" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="3"/>
-        <Label x:Name="numer_stolika" HorizontalAlignment="Left" Margin="668,48,0,0" VerticalAlignment="Top" Height="38" Width="117" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="3"/>
-        <Label x:Name="ilosc_gosci" HorizontalAlignment="Left" Margin="668,86,0,0" VerticalAlignment="Top" Height="38" Width="117" RenderTransformOrigin="0.518,-1.765" Grid.ColumnSpan="3"/>
-        <Button Name="powrot_do_menu_gl" Content="Zatwierdź rachunek" HorizontalAlignment="Left" Margin="298,335,0,0" VerticalAlignment="Top" Height="40" Width="166" Click="powrot_do_menu_gl_Click"/>
-        <Label x:Name="lbCenaCalosci" Content="0" HorizontalAlignment="Left" Margin="670,129,0,0" VerticalAlignment="Top" Height="30" Width="115" Grid.ColumnSpan="3"/>
-        <ComboBox x:Name="kategorie" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="169" Height="30" SelectionChanged="kategorie_SelectionChanged">
-            <ComboBoxItem Content="Burgery"/>
-            <ComboBoxItem Content="Zupy"/>
-            <ComboBoxItem Content="Przekąski"/>
-            <ComboBoxItem Content="Mięsa"/>
-            <ComboBoxItem Content="Napoje"/>
+    <Grid Background="DarkGray">
+
+        <Label x:Name="priorytet" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="38" Width="141" FontSize="18" RenderTransformOrigin="0.518,-1.765"/>
+        <Label x:Name="numer_stolika" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="190" FontSize="18" RenderTransformOrigin="0.518,-1.765"/>
+        <Label x:Name="ilosc_gosci" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Height="38" Width="117" FontSize="18" RenderTransformOrigin="0.518,-1.765"/>
+        <Button Name="powrot_do_menu_gl" Content="Zatwierdź rachunek" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" FontSize="18" Width="228" Height="52" Click="powrot_do_menu_gl_Click" Background="Black" Foreground="White"/>
+        <Label x:Name="lbCenaCalosci" Content="0" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="30" Width="85" FontSize="18"/>
+        <ComboBox x:Name="kategorie" HorizontalAlignment="Left" Margin="153,0,0,10" VerticalAlignment="Bottom" Width="169" Height="30" SelectionChanged="kategorie_SelectionChanged" FontSize="18">
+            <ComboBoxItem Content="Przekąski" FontSize="18"/>
+            <ComboBoxItem Content="Zupy" FontSize="18"/>
+            <ComboBoxItem Content="Burgery" FontSize="18"/>
+            <ComboBoxItem Content="Mięsa" FontSize="18"/>
+            <ComboBoxItem Content="Napoje" FontSize="18"/>
         </ComboBox>
-        <Grid x:Name="burgery" Margin="184,35,65,104">
-            <Button x:Name="classicBurger" HorizontalAlignment="Left" Margin="75,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="classicBurger_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Classic Burger" FontSize="9"/>
+        <Grid x:Name="burgery" Margin="0,46,23,100" HorizontalAlignment="Right" Width="881">
+            <Button x:Name="classicBurger" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="classicBurger_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Classic Burger" FontSize="18"/>
             </Button>
-            <Button x:Name="texasBurger" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="texasBurger_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Texas Burger" FontSize="9"/>
+            <Button x:Name="texasBurger" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="texasBurger_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Texas Burger" FontSize="18"/>
             </Button>
-            <Button x:Name="cheeseburger" HorizontalAlignment="Left" Margin="394,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="cheeseburger_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="CheeseBurger" FontSize="9"/>
+            <Button x:Name="cheeseburger" HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="cheeseburger_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="CheeseBurger" FontSize="18"/>
             </Button>
-            <Button x:Name="porkRibSandwich" HorizontalAlignment="Left" Margin="75,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="porkRibSandwich_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Porkrib Sandwich" FontSize="9"/>
+            <Button x:Name="porkRibSandwich" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="porkRibSandwich_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Porkrib Sandwich" FontSize="18"/>
             </Button>
-            <Button x:Name="pulledPorkSandwich" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="pulledPorkSandwich_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Pulled Pork Sandwich" FontSize="9"/>
+            <Button x:Name="pulledPorkSandwich" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="pulledPorkSandwich_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Pulled Pork Sandwich" FontSize="18"/>
             </Button>
-            <Button x:Name="alCaponeBurger" HorizontalAlignment="Left" Margin="394,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="alCaponeBurger_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Al Capone Burger" FontSize="9"/>
-            </Button>
-        </Grid>
-        <Grid x:Name="zupy" Margin="184,35,65,104">
-            <Button x:Name="zupaCzosnkowa" HorizontalAlignment="Left" Margin="75,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="zupaCzosnkowa_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Zupa Czosnkowa" FontSize="9"/>
-            </Button>
-            <Button x:Name="kremKukurydza" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="kremKukurydza_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Zupa Krem z Kukurydzy" FontSize="9"/>
-            </Button>
-            <Button x:Name="peperonata" HorizontalAlignment="Left" Margin="394,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="peperonata_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Peperonata" FontSize="9"/>
-            </Button>
-            <Button x:Name="rosol" HorizontalAlignment="Left" Margin="75,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="rosol_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Rosół" FontSize="9"/>
-            </Button>
-            <Button x:Name="pomidorowa"  HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="pomidorowa_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Pomidorowa" FontSize="9"/>
-            </Button>
-            <Button  x:Name="barszcz" HorizontalAlignment="Left" Margin="394,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="barszcz_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Barszcz" FontSize="9"/>
+            <Button x:Name="alCaponeBurger" HorizontalAlignment="Right" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="alCaponeBurger_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Al Capone Burger" FontSize="18"/>
             </Button>
         </Grid>
-        <Grid x:Name="przekaski" Margin="184,35,65,104">
-            <Button x:Name="salatkaKurczak" HorizontalAlignment="Left" Margin="75,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="salatkaKurczak_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Sałatka z Kurczaka" FontSize="9"/>
+        <Grid x:Name="zupy" Margin="0,46,23,100" HorizontalAlignment="Right" Width="881">
+            <Button x:Name="zupaCzosnkowa" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="zupaCzosnkowa_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Zupa Czosnkowa" FontSize="18"/>
             </Button>
-            <Button x:Name="partyNachos" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="partyNachos_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Party Nachos" FontSize="9"/>
+            <Button x:Name="kremKukurydza" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="kremKukurydza_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Zupa Krem z Kukurydzy" FontSize="18"/>
             </Button>
-            <Button x:Name="beefTartare" HorizontalAlignment="Left" Margin="394,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="beefTartare_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Beef tartare" FontSize="9"/>
+            <Button x:Name="peperonata" HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="peperonata_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Peperonata" FontSize="18"/>
             </Button>
-            <Button x:Name="bigComboPlate" HorizontalAlignment="Left" Margin="75,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="bigComboPlate_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Big Combo Plate" FontSize="9"/>
+            <Button x:Name="rosol" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="rosol_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Rosół" FontSize="18"/>
             </Button>
-            <Button x:Name="louisianaWings" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="louisianaWings_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Louisiana Bufallo Wings" FontSize="9"/>
+            <Button x:Name="pomidorowa"  HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="pomidorowa_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Pomidorowa" FontSize="18"/>
             </Button>
-        </Grid>
-        <Grid x:Name="miesa" Margin="184,35,65,104">
-            <Button x:Name="classicSteak" HorizontalAlignment="Left" Margin="75,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="classicSteak_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Classic Steak" FontSize="9"/>
-            </Button>
-            <Button x:Name="porkRibs" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="porkRibs_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Pork Ribs" FontSize="9"/>
-            </Button>
-            <Button x:Name="tomahawk" HorizontalAlignment="Left" Margin="394,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="tomahawk_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Tomahawk Steak" FontSize="9"/>
-            </Button>
-            <Button x:Name="ribeye" HorizontalAlignment="Left" Margin="75,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="ribeye_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Ribeye Steak" FontSize="9"/>
-            </Button>
-            <Button x:Name="newyork" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="newyork_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="New York Steak" FontSize="9"/>
-            </Button>
-            <Button x:Name="porkNeck" HorizontalAlignment="Left" Margin="394,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="porkNeck_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Pork Neck" FontSize="9"/>
-            </Button>
-            <Button x:Name="chickenBreasts" HorizontalAlignment="Left" Margin="75,208,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="chickenBreasts_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Chicken Breast" FontSize="9"/>
+            <Button  x:Name="barszcz" HorizontalAlignment="Right" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="barszcz_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Barszcz" FontSize="18"/>
             </Button>
         </Grid>
-        <Grid x:Name="napoje" Margin="184,35,65,104">
-            <Button x:Name="pepsi" HorizontalAlignment="Left" Margin="75,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="pepsi_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Pepsi" FontSize="9"/>
+        <Grid x:Name="przekaski" Margin="0,46,23,100" HorizontalAlignment="Right" Width="881">
+            <Button x:Name="salatkaKurczak" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="salatkaKurczak_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Sałatka z Kurczaka" FontSize="18"/>
             </Button>
-            <Button x:Name="mirinda" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="mirinda_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Mirinda" FontSize="9"/>
+            <Button x:Name="partyNachos" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="partyNachos_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Party Nachos" FontSize="18"/>
             </Button>
-            <Button x:Name="shweppes"  HorizontalAlignment="Left" Margin="394,40,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="shweppes_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Shweppes" FontSize="9"/>
+            <Button x:Name="beefTartare" HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="beefTartare_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Beef tartare" FontSize="18"/>
             </Button>
-            <Button x:Name="lipton" HorizontalAlignment="Left" Margin="75,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="lipton_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Lipton" FontSize="9"/>
+            <Button x:Name="bigComboPlate" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="bigComboPlate_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Big Combo Plate" FontSize="18"/>
             </Button>
-            <Button x:Name="woda" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="woda_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Woda" FontSize="9"/>
-            </Button>
-            <Button x:Name="sok" HorizontalAlignment="Left" Margin="394,122,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="sok_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Sok" FontSize="9"/>
-            </Button>
-            <Button x:Name="redBull" HorizontalAlignment="Left" Margin="75,208,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="redBull_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Red Bull" FontSize="9"/>
-            </Button>
-            <Button x:Name="wino" HorizontalAlignment="Center" Margin="0,208,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="wino_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Wino" FontSize="9"/>
-            </Button>
-            <Button x:Name="prosecco" HorizontalAlignment="Left" Margin="394,208,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="prosecco_Click" FontSize="9">
-                <TextBlock TextWrapping="Wrap" Text="Prosecco" FontSize="9"/>
+            <Button x:Name="louisianaWings" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="louisianaWings_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Louisiana Bufallo Wings" FontSize="18"/>
             </Button>
         </Grid>
+        <Grid x:Name="miesa" Margin="0,46,23,100" HorizontalAlignment="Right" Width="881">
+            <Button x:Name="classicSteak" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="classicSteak_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Classic Steak" FontSize="18"/>
+            </Button>
+            <Button x:Name="porkRibs" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="porkRibs_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Pork Ribs" FontSize="18"/>
+            </Button>
+            <Button x:Name="tomahawk" HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="tomahawk_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Tomahawk Steak" FontSize="18"/>
+            </Button>
+            <Button x:Name="ribeye" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="ribeye_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Ribeye Steak" FontSize="18"/>
+            </Button>
+            <Button x:Name="newyork" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="newyork_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="New York Steak" FontSize="18"/>
+            </Button>
+            <Button x:Name="porkNeck" HorizontalAlignment="Right" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="porkNeck_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Pork Neck" FontSize="18"/>
+            </Button>
+            <Button x:Name="chickenBreasts" HorizontalAlignment="Left" Margin="0,290,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="chickenBreasts_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Chicken Breast" FontSize="18"/>
+            </Button>
+        </Grid>
+        <Grid x:Name="napoje" Margin="0,48,23,100" HorizontalAlignment="Right" Width="881">
+            <Button x:Name="pepsi" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="pepsi_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Pepsi" FontSize="18"/>
+            </Button>
+            <Button x:Name="mirinda" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="mirinda_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Mirinda" FontSize="18"/>
+            </Button>
+            <Button x:Name="shweppes"  HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="shweppes_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Shweppes" FontSize="18"/>
+            </Button>
+            <Button x:Name="lipton" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="lipton_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Lipton" FontSize="18"/>
+            </Button>
+            <Button x:Name="woda" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="woda_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Woda" FontSize="18"/>
+            </Button>
+            <Button x:Name="sok" HorizontalAlignment="Right" Margin="0,165,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="sok_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Sok" FontSize="18"/>
+            </Button>
+            <Button x:Name="redBull" HorizontalAlignment="Left" Margin="0,290,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="redBull_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Red Bull" FontSize="18"/>
+            </Button>
+            <Button x:Name="wino" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="wino_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Wino" FontSize="18"/>
+            </Button>
+            <Button x:Name="prosecco" HorizontalAlignment="Right" Margin="0,290,0,0" VerticalAlignment="Top" Height="75" Width="200" Click="prosecco_Click" FontSize="18" Background="Black" Foreground="White">
+                <TextBlock TextWrapping="Wrap" Text="Prosecco" FontSize="18"/>
+            </Button>
+        </Grid>
+        <Label Content="Suma zamówienia:" HorizontalAlignment="Right" Margin="0,0,100,10" VerticalAlignment="Bottom" Width="160" Height="30" FontSize="18"/>
+        <Label Content="Wybór kategorii" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" FontSize="18" Height="34" Width="138"/>
     </Grid>
 </Window>

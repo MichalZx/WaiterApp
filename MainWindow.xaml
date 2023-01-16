@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WaiterApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Width="1280" Height="720"
         WindowStartupLocation="Manual"
-        Left="400" Top="0">
-    <Grid>
-        <Button x:Name="przycisk" Content="Utwórz rachunek" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Click="Button_Click1" FontSize="20"/>
-        <TextBox x:Name="tbNazwaKelnera" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="login kelnera" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <ComboBox Name="cbFiles" Margin="10,117,501,231" Loaded="ComboBox_Loaded" SelectionChanged="ComboBox_SelectionChanged">
+        Left="400" Top="0" >
+    <Grid Background="DarkGray" >
+        <Button FontSize="24" x:Name="przycisk" Content="Utwórz rachunek" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Click="Button_Click1"  Background="black" Foreground="white" Width="227" Height="52" />
+        <TextBox x:Name="tbNazwaKelnera" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="login kelnera" VerticalAlignment="Top" Width="227" FontSize="24" Height="40"/>
+        <ComboBox Name="cbFiles" FontSize="18"  Margin="10,126,825,512" Loaded="ComboBox_Loaded" SelectionChanged="ComboBox_SelectionChanged" Background="Gray">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Path=Name}" />
@@ -19,8 +19,9 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-        <TextBlock Name="tbContent" Margin="383,16,57,92" Background="Bisque"/>
-        <Button Content="Przenieś plik" Margin="392,367,66,10" Click="MoveButton_Click" />
+        <Frame Name="rachunkiInfo" Content="" Margin="756,10,0,87" NavigationUIVisibility="Hidden"/>
+
+        <Button Content="Przenieś plik" FontSize="18" Background="Black" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Click="MoveButton_Click" Width="475" Height="88"/>
 
 
     </Grid>

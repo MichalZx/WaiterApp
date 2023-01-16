@@ -1,0 +1,1 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 1	Ilość gości: 1	Priorytet: Wysoki

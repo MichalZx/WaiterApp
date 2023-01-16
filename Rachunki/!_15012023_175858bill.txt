@@ -1,0 +1,3 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 2	Ilość gości: 2	Priorytet: Wysoki
+Danie	Napoje	Red Bull	14	|
+Danie	Mięsa	Chicken Breast	28	|

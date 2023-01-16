@@ -1,0 +1,7 @@
+Dane o rachunku	Kelner: login kelnera	Stolik: 1	Ilość gości: 1	Priorytet: Normalny
+Danie	Zupy	Rosół	12	|
+Danie	Zupy	Zupa Czosnkowa	17	|
+Danie	Zupy	Zupa Krem Kukurydza	16	|
+Danie	Zupy	Pomidorowa	14	|
+Danie	Zupy	Barszcz	10	|
+Danie	Zupy	Peperonata	17	|

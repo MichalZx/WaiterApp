@@ -1,5 +1,0 @@
-Dane o rachunku	Kelner: login kelnera	Stolik: 3	Ilość gości: 4	Priorytet: Normalny
-Danie	Steki	Tomahawk Steak	84	|
-Danie	Steki	Pork Ribs	55	|
-Danie	Burgery	Texas	37	|
-Danie	Burgery	CheeseBurger	35	|
